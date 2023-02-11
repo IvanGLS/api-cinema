@@ -61,7 +61,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "cinema_service.urls"
+ROOT_URLCONF = "api_cinema.urls"
 
 TEMPLATES = [
     {
@@ -79,7 +79,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "cinema_service.wsgi.application"
+WSGI_APPLICATION = "api_cinema.wsgi.application"
 
 
 # Database
@@ -158,7 +158,7 @@ REST_FRAMEWORK = {
 }
 
 SPECTACULAR_SETTINGS = {
-    "TITLE": "Cinema Service API",
+    "TITLE": "Cinema API",
     "DESCRIPTION": "Order cinema tickets",
     "VERSION": "1.0.0",
     "SERVE_INCLUDE_SCHEMA": False,
