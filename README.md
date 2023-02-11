@@ -2,6 +2,10 @@
 
 API service for cinema management written on DRF
 
+### Test user
+* Login: Admin
+* Password: test2023
+
 ## Features
 * JWT authenticated
 * Admin panel /admin/
