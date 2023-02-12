@@ -17,19 +17,22 @@ API service for cinema management written on DRF
 * Filtering movies and movie sessions
 
 ## Installing using GitHub
-* Install PostgresSQL and create db
-* git clone https://github.com/IvanGLS/api-cinema.git
-* cd cinema_API
-* python -m venv venv
-* source venv/bin/activate
-* pip install -r requirements.txt
-* set DB_HOST=<your db hostname>
-* set DB_NAME=<your db name>
-* set DB_USER=<your db username>
-* set DB_PASSWORD=<your db user password>
-* set SECRET_KEY=<your secret key>
-* python manage.py migrate
-* python manage.py runserver
+1. Install PostgresSQL and create db
+2. git clone https://github.com/IvanGLS/api-cinema.git
+3. cd cinema_API
+4. python -m venv venv
+5. venv activate
+   * source venv/bin/activate (on macOS)
+   * venv\Scripts\activate (on Windows)
+6. pip install -r requirements.txt
+7. add db settings to .env (load_dotenv use that automatically)
+   * DB_HOST= your db hostname
+   * DB_NAME= your db name
+   * DB_USER= your db username
+   * DB_PASSWORD= your db user password
+   * SECRET_KEY= your secret key
+8. python manage.py migrate
+9. python manage.py runserver
 
 ## Run with docker
 Docker should be installed
